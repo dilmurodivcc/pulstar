@@ -1,0 +1,65 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+
+footer {
+    height: auto;
+    width: 100%;
+    padding: 96px 0 31px 0;
+    background-color: $footer-bck;
+    .container {
+      @include column(0, center, start);
+    }
+    h2 {
+      @include font-style(400, 29px, 110%, $white);
+      text-transform: uppercase;
+    }
+    h3 {
+      @include font-style(400, 24px, 133%, $white);
+      margin-bottom: 75px;
+      padding-right: 100px;
+    }
+    .imgLine {
+      @include center(31px);
+      margin: 32px 0 64px 0;
+  
+      .two {
+        @include center(31px);
+      }
+    }
+  }
+  .links {
+    @include center(145px, start, start);
+    width: 100%;
+    border-bottom: 1px solid $black;
+    padding: 0 0 32px 0;
+    .sub {
+      border-bottom: 2px solid $white;
+    }
+    a {
+      @include font-style(400, 16px, 133%, $white);
+      text-decoration: none;
+    }
+  
+    .link {
+      @include center(145px, center, start);
+    }
+  
+    .column {
+      @include column(5px, center, start);
+    }
+  }
+  .copyright {
+    @include center(0, space-between, center);
+    margin: 32px 0 0 0;
+    width: 100%;
+    p {
+      @include font-style(400, 14px, 133%, $white);
+      display: flex;
+      gap: 20px;
+      span {
+        color: $secondary;
+      }
+    }
+  }
+    

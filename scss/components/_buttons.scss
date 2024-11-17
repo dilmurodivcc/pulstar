@@ -1,7 +1,5 @@
-@import "variables";
-@import "mixins";
-@import "media";
-
+@import "../utils/variables";
+@import "../utils/mixins";
 .primary-btn {
   border-radius: 3px;
   width: 114px;

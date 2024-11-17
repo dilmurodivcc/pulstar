@@ -1,0 +1,39 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+    padding: 29px 0;
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      a {
+        text-decoration: none;
+        font-weight: $color;
+        font-size: 14px;
+        line-height: 133%;
+        color: #3f3b3d;
+      }
+    }
+    .btns {
+      @include center(12px);
+    }
+    .icons {
+      @include center(10px);
+      width: 69px;
+      height: 42px;
+      background-color: $section-bkc;
+    }
+    p {
+      color: $white;
+      padding: 1px 6px;
+      @include center();
+      background-color: $first-card;
+      border-radius: 100px;
+    }
+  }
