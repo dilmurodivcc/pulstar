@@ -1,8 +1,10 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./base/reset";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./components/buttons";
-@import "./media/medium";
-@import "./media/small";
+@use "./utils/variables" as *;
+@use "./utils/mixins" as *;
+@use "./base/reset" as *;
+@use "./layout/header" as *;
+@use "./layout/footer" as *;
+@use "./components/buttons" as *;
+@use "./section/first" as *;
+@use "./section/second" as *;
+@use "./media/small" as *;
+@use "./media/medium" as *;

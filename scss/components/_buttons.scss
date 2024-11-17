@@ -1,5 +1,5 @@
-@import "../utils/variables";
-@import "../utils/mixins";
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 .primary-btn {
   border-radius: 3px;
   width: 114px;
@@ -10,6 +10,7 @@
   font-size: 14px;
   line-height: 133%;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 .secondary-btn {
   border-radius: 3px;
@@ -21,4 +22,11 @@
   font-size: 14px;
   line-height: 133%;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
 }

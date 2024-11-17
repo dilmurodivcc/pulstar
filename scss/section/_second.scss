@@ -1,0 +1,34 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.second {
+  @include column(0, center, center);
+  margin: 60px 0 130px 0;
+  pre{
+    @include font-style(400, 12px, 138%, $secondary);
+    margin-bottom: 16px
+
+
+  }
+  
+  h2 {
+    @include font-style(400, 27px, 138%, $color);
+    letter-spacing: 0.02em;
+    padding: 0 50px;
+    text-align: center;
+  }
+  .line{
+    @include center(58px);
+    margin-top: 60px
+  }
+  .column{
+    @include column(13px);
+  }
+  b{
+    @include font-style(400, 21px, 119%, $color);
+  }
+  p{
+    @include font-style(400, 12px, 138%, $color);
+
+  }
+}

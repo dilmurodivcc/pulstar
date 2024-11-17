@@ -174,6 +174,7 @@ footer .imgLine .two {
   font-size: 14px;
   line-height: 133%;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .secondary-btn {
@@ -186,6 +187,142 @@ footer .imgLine .two {
   font-size: 14px;
   line-height: 133%;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.first {
+  background-color: #3f3b3d;
+  height: 482px;
+  padding: 64px;
+  margin: 80px 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.first h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 129%;
+  color: #ffffff;
+}
+.first .btn-line {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.first button {
+  width: 178px;
+  height: 45px;
+}
+
+.carousel-container {
+  width: 768px;
+  height: 562px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 768px;
+  height: 562px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+}
+
+.indicator {
+  width: 7px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #ffffff;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 60px 0 130px 0;
+}
+.second pre {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138%;
+  color: #f14814;
+  margin-bottom: 16px;
+}
+.second h2 {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 138%;
+  color: #3f3b3d;
+  letter-spacing: 0.02em;
+  padding: 0 50px;
+  text-align: center;
+}
+.second .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 58px;
+  margin-top: 60px;
+}
+.second .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.second b {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 119%;
+  color: #3f3b3d;
+}
+.second p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138%;
+  color: #3f3b3d;
 }
 
 /*# sourceMappingURL=style.css.map */
