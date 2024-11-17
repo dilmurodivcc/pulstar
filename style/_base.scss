@@ -1,0 +1,19 @@
+@import "variables";
+@import "media";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $white;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}

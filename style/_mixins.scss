@@ -1,0 +1,21 @@
+@mixin center($gap: 0, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+@mixin column($gap: 0, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+@mixin font-style($weight, $size, $line-height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
