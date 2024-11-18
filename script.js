@@ -46,35 +46,74 @@ close.addEventListener("click", () => {
   menuMobile.classList.remove("active");
   document.body.style.overflowY = "auto";
 });
-// Get the icon element
 const themeIcon = document.getElementById("theme-icon");
 
-// Function to toggle theme and icon
 const toggleTheme = () => {
-  // Toggle the 'dark' class on the <body> element
   document.body.classList.toggle("dark");
 
-  // Check if the 'dark' class is present
   if (document.body.classList.contains("dark")) {
-    // Change the icon to the sun
     themeIcon.classList.remove("fa-moon");
     themeIcon.classList.add("fa-sun");
-    localStorage.setItem("theme", "dark"); // Save preference
+    localStorage.setItem("theme", "dark"); 
   } else {
-    // Change the icon to the moon
     themeIcon.classList.remove("fa-sun");
     themeIcon.classList.add("fa-moon");
-    localStorage.setItem("theme", "light"); // Save preference
+    localStorage.setItem("theme", "light"); 
   }
 };
 
-// Add event listener to the icon
 themeIcon.addEventListener("click", toggleTheme);
 
-// Load saved theme on page load
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
   document.body.classList.add("dark");
   themeIcon.classList.remove("fa-moon");
   themeIcon.classList.add("fa-sun");
 }
+
+AOS.init();
+AOS.init({
+  duration: 1800,
+});
+  const customCursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    const smoke = document.createElement("div");
+    smoke.classList.add("tutun");
+
+    smoke.style.left = `${e.pageX}px`;
+    smoke.style.top = `${e.pageY}px`;
+
+    document.body.appendChild(smoke);
+
+    setTimeout(() => {
+      smoke.style.opacity = "0";
+    }, 100);
+
+    setTimeout(() => {
+      smoke.remove();
+    }, 550);
+  });
+let backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+backToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

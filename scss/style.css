@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -49,7 +50,7 @@ header .icons {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 69px;
+  width: 100px;
   height: 42px;
   background-color: #f8f9fa;
 }
@@ -268,6 +269,59 @@ button:hover {
   transform: translateY(-1px);
   transition: all 0.2s ease-in-out;
   box-shadow: none;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #f14814;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.tutun {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #f14814;
+  border-radius: 100%;
+  pointer-events: none;
+  filter: blur(8px);
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.5s;
+  z-index: 100;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f14814;
+  border-radius: 10px;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f14814;
+  transition: all 0.3s ease-in-out;
 }
 
 .first {

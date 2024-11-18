@@ -11,9 +11,11 @@
 body {
   font-family: $font-family;
   background-color: $white;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
 }
+
