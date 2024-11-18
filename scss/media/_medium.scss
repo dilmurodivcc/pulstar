@@ -59,6 +59,7 @@
     padding: 24px;
     z-index: 100;
     z-index: 9999;
+    ;
 
     .social {
       margin: 0 auto;
@@ -118,4 +119,9 @@
     z-index: 9999;
   }
 
+}
+
+
+.header__btns-menu{
+  display: block;
 }
