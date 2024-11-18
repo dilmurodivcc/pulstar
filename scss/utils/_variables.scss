@@ -11,16 +11,16 @@ $sky-blue: #dceae9;
 $btn: #dddbda;
 $section-bkc: #f8f9fa;
 
-body.dark{
-    $color: #e0e0e0 !important;           // Light gray for general text
-    $primary: #9baea3 !important;         // A lighter and more muted primary for contrast
-    $secondary: #ff7043 !important;       // A vibrant accent color for highlights
-    $white: #1a1a1a !important;           // Dark background color (was $white)
-    $black: #ffffff !important;           // White for text and important elements (was $black)
-    $card-bck: #2a2a2a !important;        // Darker background for cards
-    $first-card: #1e1e1e !important;      // Very dark gray for a primary card background
-    $footer-bck: #1e1e1e !important;      // Matching footer background
-    $sky-blue: #4f6360 !important;        // Muted blue-green for subtle highlights
-    $btn: #3a3a3a !important;             // Darker button background
-    $section-bkc: #121212 !important;     // Very dark background for sections
-  }
+.dark {
+  $color: #e0e0e0 !important;
+  $primary: #9baea3 !important;
+  $secondary: #ff7043 !important;
+  $white: #1a1a1a !important;
+  $black: #ffffff !important;
+  $card-bck: #2a2a2a !important;
+  $first-card: #1e1e1e !important;
+  $footer-bck: #1e1e1e !important;
+  $sky-blue: #4f6360 !important;
+  $btn: #3a3a3a !important;
+  $section-bkc: #121212 !important;
+}
