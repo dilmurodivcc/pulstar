@@ -65,6 +65,10 @@ header p {
   border-radius: 100px;
 }
 
+.header__btns-menu {
+  display: none;
+}
+
 footer {
   height: auto;
   width: 100%;
