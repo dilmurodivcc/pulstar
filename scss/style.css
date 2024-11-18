@@ -888,9 +888,9 @@ small {
     padding: 23px 18px;
     z-index: 9999;
   }
-}
-.header__btns-menu {
-  display: block;
+  .header__btns-menu {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
