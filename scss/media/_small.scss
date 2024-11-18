@@ -1,3 +1,54 @@
 @use '../utils/variables' as *; 
 @use '../utils/mixins' as *;
 
+@media (max-width: 500px) {
+    .first{
+        align-items: end !important;
+        justify-content: center !important;
+        h1{
+            font-size: 30px !important;
+        }
+    }
+    .second{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .fourth{
+        h3{
+            font-size: 18px !important;
+        }
+    }
+    .fivth {
+        .right{
+            height: auto !important;
+            align-items: center;
+            gap: 50px;
+        }
+        .title{
+            align-items: center !important;
+            text-align: center !important;
+        }
+        .text{
+            align-items: center !important;
+            text-align: center;
+        }
+    }
+    footer{
+        .container{
+            align-items: center !important;
+        }
+        h2{
+            text-align: center;
+        }
+        .links{
+            align-items: center !important; 
+            h3{
+                text-align: center;
+                padding: 0 20px !important;
+                font-size: 20px;
+            }
+          
+        }
+    }
+}
