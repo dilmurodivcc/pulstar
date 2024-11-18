@@ -1,0 +1,43 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.fourth {
+  background-color: $section-bkc;
+  padding: 128px 0 64px 0;
+  .container {
+    @include column(0, center, center);
+  }
+  .line1 {
+    @include center(10px, center, center);
+    width: 85%;
+    margin-bottom: 64px
+  }
+  .content {
+    @include column(30px);
+    background-color: $sky-blue;
+    height: 100%;
+    width: 50%;
+    height: 536px;
+  }
+  .line2 {
+    @include center(74px);
+  }
+}
+.column {
+  @include column(20px);
+}   
+h2 {
+  @include font-style(400, 29px, 121%, $color);
+
+  text-transform: uppercase;
+  color: #3f3b3d;
+  margin-bottom: 32px
+}
+p{
+  @include font-style(400, 16px, 133%, $color);
+  text-align: center    
+}
+h3 {
+  @include font-style(400, 24px, 133%, $color);
+  text-align: center;
+}

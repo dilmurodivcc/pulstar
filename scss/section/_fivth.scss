@@ -1,0 +1,63 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.fivth {
+  @include center(0, center, center);
+  .container {
+    @include center(64px, center, center);
+  }
+  margin: 60px 0 130px 0;
+  .left {
+    background-image: url(../../assets/images/blueJeck.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 654px;
+    padding: 16px;
+    width: 508px;
+    @include center(0, center, end);
+    .content {
+      background-color: $white;
+      width: 100%;
+      @include column(10px);
+      padding: 31px 0;
+    }
+  }
+  a {
+    @include font-style(700, 16px, 133%, $color);
+    text-decoration: none;
+  }
+}
+small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #5d6e67;
+}
+
+.right {
+  height: 654px;
+  width: 508px;
+  @include column(0, space-between, start);
+  justify-content: space-between;
+
+  h2 {
+    @include font-style(400, 52px, 108%, $color);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  .column {
+    @include column(16px, start, start);
+  }
+  .row {
+    @include center(32px);
+    .text {
+      @include column(0, start, start);
+    }
+    p {
+      text-align: start;
+    }
+  }
+}

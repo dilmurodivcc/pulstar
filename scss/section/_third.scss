@@ -1,0 +1,73 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.third {
+  @include column(10px, center, center);
+  .cards-line {
+    @include center(10px, center, center);
+    width: 100%;
+    .card {
+      width: 421px;
+      height: 421px;
+      background-image: url(../../assets/images/card-img.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 12px;
+    }
+    .card:nth-child(1) {
+      background-image: url(../../assets/images/egg.png);
+    }
+    .card:nth-child(3) {
+      background-image: url(../../assets/images/ananans.png);
+    }
+  }
+  .big-cards {
+    @include center(10px, center, center);
+    width: 100%;
+    .big-card {
+      width: 636px;
+      height: 477px;
+      background-image: url(../../assets/images/cardBG-1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include column(0, end, center);
+      p {
+        @include font-style(400, 14px, 133%, $white !important);
+        margin-top: -20px;
+      }
+        h2 {
+          @include font-style(400, 39px, 113%, $white !important);
+          letter-spacing: 0.01em;
+        }
+    }
+    .big-card2 {
+      background-image: url(../../assets/images/bg-2.png);
+    }
+  }
+}
+
+.third .text {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  padding: 12px 0;
+  border-top: 1px solid rgb(0, 0, 0, 0.2);
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3f3b3d;
+  }
+  @include center(10px, space-between);
+  .price {
+    @include center(10px);
+  }
+}
+.cnt {
+  @include column(0);
+  margin-bottom: 20px;
+}
