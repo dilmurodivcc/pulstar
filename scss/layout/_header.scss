@@ -21,6 +21,10 @@ header {
         color: #3f3b3d;
       }
     }
+    .menu{
+      display: none;
+
+    }
     .btns {
       @include center(12px);
     }

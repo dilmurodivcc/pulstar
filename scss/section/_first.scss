@@ -6,6 +6,7 @@
   height: 482px;
   padding: 64px;
   margin: 80px 0 20px;
+  width: 100%;
   position: relative;
   @include center(0, start, end);
   
@@ -27,7 +28,7 @@
     overflow: hidden;
     position: absolute; 
     bottom: 0 ;
-    right: 0; 
+    right: 0;
 }
 
 .carousel-slide {

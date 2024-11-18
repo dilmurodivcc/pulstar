@@ -1,8 +1,37 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
-@media  (min-width: 768px) and (max-width: 1024px) {
-    .container {
-      max-width: 80vw;
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80vw;
+  }
+
+  .first {
+    height: 1000px;
+    margin-top: 40px;
+
+  }
+  .carousel-container {
+    width: 100% !important;
+    position: absolute;
+    top: 0 !important;
+  }
+  header {
+    nav {
+      display: none;
     }
+    .menu {
+      display: block;
+      cursor: pointer;
+      height: 25px;
+    }
+  }
+  .fourth .content {
+    width: 100% !important;
+  }
+  .fourth .line1 {
+    img{
+      width: 100% !important;
+    }
+  }
 }
